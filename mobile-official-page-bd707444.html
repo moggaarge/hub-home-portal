@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱游戏 · 日常查询与延伸阅读</title>
+  <style>
+    /* 极简留白、窄正文宽度、清晰标题层级 */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #faf9f6;
+      color: #1f1f1f;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      padding: 3rem 1.25rem 5rem;
+    }
+
+    .page-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* 标题体系 —— 清晰层级 */
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+      color: #111;
+    }
+
+    .subhead {
+      font-size: 1.05rem;
+      color: #5b5b5b;
+      border-left: 3px solid #acc0d4;
+      padding-left: 1rem;
+      margin-bottom: 2.8rem;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin: 2.8rem 0 1rem 0;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #e0ddd8;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 500;
+      margin: 1.6rem 0 0.6rem 0;
+      color: #2b2b2b;
+    }
+
+    p, li {
+      font-size: 1rem;
+      color: #3b3b3b;
+    }
+
+    a {
+      color: #1f4d7a;
+      text-decoration: none;
+      border-bottom: 1px solid #cbdbe9;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    a:hover, a:focus {
+      color: #0a2b44;
+      border-bottom-color: #1f4d7a;
+    }
+
+    /* 卡片 / 区块 —— 目录感布局 */
+    .index-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.8rem 0 2.2rem;
+    }
+
+    .index-item {
+      background: #ffffff;
+      padding: 1.2rem 1.1rem;
+      border-radius: 10px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.03), 0 2px 8px rgba(0,0,0,0.02);
+      transition: box-shadow 0.2s;
+      border: 1px solid #edeae4;
+    }
+
+    .index-item:hover {
+      box-shadow: 0 3px 12px rgba(0,0,0,0.04), 0 5px 20px rgba(0,0,0,0.02);
+    }
+
+    .index-item .icon {
+      font-size: 1.6rem;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .index-item strong {
+      display: block;
+      font-weight: 500;
+      font-size: 1.05rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .index-item span {
+      font-size: 0.88rem;
+      color: #6b6b6b;
+    }
+
+    .notice-box {
+      background: #f2f0ec;
+      border-left: 4px solid #b7c6d4;
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 8px 8px 0;
+      margin: 2rem 0;
+    }
+
+    .notice-box p {
+      font-size: 0.95rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .notice-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .faq-mini {
+      list-style: none;
+      margin: 1.2rem 0 2rem;
+    }
+
+    .faq-mini li {
+      border-bottom: 1px solid #e7e4de;
+      padding: 0.8rem 0;
+    }
+
+    .faq-mini li:last-child {
+      border-bottom: none;
+    }
+
+    .faq-mini .q {
+      font-weight: 500;
+      display: block;
+      margin-bottom: 0.15rem;
+      color: #1f1f1f;
+    }
+
+    .faq-mini .a {
+      font-size: 0.92rem;
+      color: #5f5f5f;
+    }
+
+    .footnote {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e0ddd8;
+      font-size: 0.88rem;
+      color: #7c7c7c;
+    }
+
+    /* 响应式细节 */
+    @media (max-width: 540px) {
+      body { padding: 1.8rem 1rem 4rem; }
+      h1 { font-size: 1.8rem; }
+      .index-grid { grid-template-columns: 1fr; }
+      .subhead { font-size: 0.95rem; }
+    }
+
+    @media (min-width: 820px) {
+      .page-wrap { max-width: 720px; }
+      .index-grid { gap: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <h1>日常查询 · 对照 · 延伸阅读</h1>
+  <div class="subhead">
+    围绕 <a href="https://mobile-official-igame.com">爱游戏</a> 梳理的轻量信息入口，
+    适合随手查阅、边读边记。
+  </div>
+
+  <!-- 目录感布局：卡片式索引 -->
+  <div class="index-grid">
+    <div class="index-item">
+      <span class="icon">📋</span>
+      <strong>平台概览</strong>
+      <span>基础信息、版本沿革、支持设备</span>
+    </div>
+    <div class="index-item">
+      <span class="icon">🔍</span>
+      <strong>查询对照</strong>
+      <span>功能对比、设置路径、常见术语</span>
+    </div>
+    <div class="index-item">
+      <span class="icon">📖</span>
+      <strong>延伸阅读</strong>
+      <span>周边文章、更新笔记、同类参考</span>
+    </div>
+    <div class="index-item">
+      <span class="icon">💡</span>
+      <strong>提示备忘</strong>
+      <span>操作细节、默认偏好、找回路径</span>
+    </div>
+  </div>
+
+  <!-- 说明区：日常使用场景切入 -->
+  <h2>在查询与对照之间</h2>
+  <p>
+    很多时候我们打开 <a href="https://mobile-official-igame.com">爱游戏</a>
+    并不为一次特定的操作，而是想翻一翻某个功能是否调整了位置、确认一下最新版本里的选项名称。
+    我们把这种「随手查」的需求整理成几个切片，方便你对照自己的习惯。
+  </p>
+  <p style="margin-top:1rem;">
+    比如账户相关设置、显示与语言偏好、通知管理——这些在不同设备或系统版本里往往藏着细微差异。
+    下面这个简表列出几个经常被问到的项目，你可以在实际页面里对照查找。
+  </p>
+
+  <!-- 无表格，改用文字描述+简洁列表，保持目录感 -->
+  <h3>常见对照点</h3>
+  <ul style="margin-left:1.2rem; margin-bottom:1.8rem;">
+    <li><strong>个人资料</strong> — 昵称、头像、绑定信息通常集中在“账户”或“个人中心”下，部分版本合并到侧栏。</li>
+    <li><strong>隐私与安全</strong> — 登录设备管理、授权列表、数据下载入口，一般放在设置-隐私。</li>
+    <li><strong>通知偏好</strong> — 活动提醒、系统公告、推送开关，可分别调整强度与时段。</li>
+  </ul>
+
+  <!-- 提示区 -->
+  <div class="notice-box">
+    <p><strong>📌 提示</strong></p>
+    <p>如果你在寻找某个旧版功能或选项，不妨先使用页面内的搜索（如果有）或按分类逐层展开。</p>
+    <p>很多改动只是换了个位置，名称并未改变。另外，<a href="https://mobile-official-igame.com">爱游戏</a> 的移动端与桌面端在布局上略有不同，但核心逻辑一致。</p>
+  </div>
+
+  <!-- 相关信息区：FAQ 摘要 -->
+  <h2>FAQ 摘要 · 选录</h2>
+  <ul class="faq-mini">
+    <li>
+      <span class="q">问：我可以在哪里查看已参与的活动记录？</span>
+      <span class="a">通常在「消息」或「活动中心」内可以找到历史记录，部分活动结束后会归档。</span>
+    </li>
+    <li>
+      <span class="q">问：切换账号后之前的数据会丢失吗？</span>
+      <span class="a">不会，数据与账号绑定，切换账号只是更换当前身份。你可以随时重新登录。</span>
+    </li>
+    <li>
+      <span class="q">问：界面语言与系统语言不一致怎么办？</span>
+      <span class="a">检查设置中的「语言与地区」选项，手动选择即可。个别页面可能跟随系统设定。</span>
+    </li>
+  </ul>
+
+  <!-- 延伸阅读区：轻量推荐 -->
+  <h2>延伸阅读</h2>
+  <p>
+    如果你对版本历史、界面变迁或某些隐藏操作感兴趣，可以在社区或帮助中心里搜索关键词。
+    另外，<a href="https://mobile-official-igame.com">爱游戏</a> 的官方更新日志通常会简述每个版本调整的内容，
+    适合用来对照自己遇到的变化。
+  </p>
+
+  <div class="footnote">
+    <p>本页为知识库入口风格 · 用于日常查询与信息对照 · 内容仅供参考</p>
+    <p style="margin-top:0.3rem;">保持简洁，不设无关跳转 · 更新于最近整理</p>
+  </div>
+
+</div>
+</body>
+</html>
